@@ -37,6 +37,7 @@ body {
   color: #333;
   backdrop-filter: blur(30px);
   padding: 20px;
+  box-shadow: 0 10px 10px rgba(18, 17, 17, 0.3);
 }
 
 .wrapper .form-box {
