@@ -16,10 +16,6 @@ const LoginPage = () => {
               <input type="password" placeholder="كلمة المرور" required/>
               <IoLockClosed className='icon' />
             </div>
-            <div classname="remember-me">
-              <input type="checkbox" id="remember-me"/>
-              <label for="remember-me">تذكرني</label>
-            </div>
             <button type="submit">تسجيل الدخول</button>
         </form>
       </div>
