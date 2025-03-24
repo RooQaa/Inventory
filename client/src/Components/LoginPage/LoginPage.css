@@ -5,7 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.header {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 22px;
+  color: #333;
+}
 body {
   font-family: "Lalezar", system-ui;
   display: flex;
