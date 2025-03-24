@@ -6,7 +6,7 @@ import { IoLockClosed } from "react-icons/io5";
 const LoginPage = () => {
   return (
     <div className='login-container'>
-      <div className="header">قسم العلاقات العامه</div> {/* Added header */}
+      <div className="header">قسم العلاقات العامه</div>
       <div className='wrapper'>
         <div className="form-box login">
           <form action="">
