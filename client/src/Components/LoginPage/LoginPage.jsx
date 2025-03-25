@@ -34,13 +34,10 @@ const LoginPage = () => {
         </div>
       </div>
       <div className="wrapper hero-wrapper">
-        <h1 className="hero-comp-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae 
-          sapien at erat gravida fermentum. Nulla facilisi. Curabitur luctus, nulla ut 
-          suscipit gravida, nunc eros sodales nisl, ut sodales libero metus in lacus. 
-          Morbi feugiat, nisl a auctor varius, velit elit feugiat felis, vel hendrerit 
-          nunc nisl eu libero.
-        </p>
+        <h1 className="hero-comp-text">مرحبًا بك في موقعنا! نوفر لك أفضل الحلول الإبداعية لتجربة تصميم فريدة.
+        </h1>
+        <p>لوريم إيبسوم هو نص شكلي يستخدم في صناعة الطباعة والنشر. كان لوريم إيبسوم هو النص الوهمي 
+          القياسي في هذه الصناعة منذ القرن الخامس عشر، عندما قامت مطبعة مجهولة بتجميع مجموعة من النصوص عشوائياً لإنشاء كتاب نماذج. لم يتغير لوريم إيبسوم كثيرًا منذ ذلك الحين، بل تم استخدامه في الطباعة الإلكترونية أيضاً. انتشر النص الوهمي مع ظهية قبل اعتما النصوص الفعلية.</p>
         <img src={heroImage} alt="Hero Illustration" className="hero-image" />
       </div>
     </div>
