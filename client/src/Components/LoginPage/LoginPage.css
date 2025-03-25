@@ -91,6 +91,11 @@ body {
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-wrapper .hero-image:hover {
+  transform: scale(1.05);
 }
 
 .wrapper .form-box {
