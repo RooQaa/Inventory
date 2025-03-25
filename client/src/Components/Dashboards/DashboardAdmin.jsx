@@ -1,12 +1,9 @@
-import React from "react";
+import React from 'react'
 
 const DashboardAdmin = () => {
   return (
-    <div style={{ textAlign: "center", padding: "50px" }}>
-      <h1>لوحة تحكم المشرف</h1>
-      <p>مرحبًا بك في لوحة التحكم الخاصة بك</p>
-    </div>
-  );
-};
+    <div>DashboardAdmin</div>
+  )
+}
 
-export default DashboardAdmin;
+export default DashboardAdmin
