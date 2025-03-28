@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lalezar", system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+  background: url('./Components/Assets/background.jpg') no-repeat center center/cover;
+}
+
+.app{
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #555;
+}
