@@ -1,4 +1,5 @@
 import { createContext, useMemo, useState } from "react";
+<<<<<<< HEAD
 import { createTheme } from "@mui/material/styles";
 
 export const tokens = {
@@ -61,3 +62,6 @@ export const themeSettings = () => {
       },
     };
   };
+=======
+import {createTheme} from "@mui/material/styles";
+>>>>>>> 84374c79218113f915e3156ab2aaf9b680a2b294
