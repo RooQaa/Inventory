@@ -20,21 +20,22 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px; /* Fixed width */
-    height: 450px; /* Fixed height to make it square */
+    width: 450px; 
+    height: 450px; 
     margin: 0 auto;
   }  
 
-.login-card {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
-  backdrop-filter: blur(8px);
-}
+  .login-card {
+    background: rgba(209, 218, 205, 0.8); /* Same color but with transparency */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(8px); /* Keeps the blur effect */
+  }
+  
 
 .icon {
   font-size: 3rem;
@@ -65,12 +66,12 @@ html, body {
 .input-group {
   display: flex;
   align-items: center;
-  border: 2px solid #ddd;
+  border: 1px solid #4a6757;
   border-radius: 6px;
   padding: 0.6rem;
   font-size: 1rem;
   margin-bottom: 0.7rem;
-  background: #f9fafb;
+  background: rgba(209, 218, 205, 0.8);;
   width: 100%;
   transition: 0.3s ease;
   direction: rtl;
@@ -89,7 +90,7 @@ html, body {
 
 .input-group:focus-within {
   border-color: #4a6757;
-  box-shadow: 0 0 6px rgba(74, 103, 87, 0.3);
+  box-shadow: 0 0 10px rgba(74, 103, 87, 1);
 }
 
 .input-group input {
@@ -160,3 +161,102 @@ html, body {
   margin: 0.4rem 0;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 768px) {
+    .login-container {
+      width: 90%; /* Adjusts the width */
+      height: auto; /* Adjusts height to auto */
+    }
+  
+    .login-card {
+      width: 100%;
+      max-width: none; /* Removes the max-width for better responsiveness */
+      padding: 1.5rem; /* Adjusts padding */
+    }
+  
+    .icon {
+      font-size: 2.5rem; /* Reduces icon size */
+    }
+  
+    .title {
+      font-size: 1.5rem; /* Reduces title font size */
+    }
+  
+    .subtitle {
+      font-size: 1rem; /* Reduces subtitle font size */
+    }
+  
+    .desc {
+      font-size: 0.8rem; /* Reduces description font size */
+    }
+  
+    .input-group {
+      font-size: 0.9rem; /* Reduces font size for input groups */
+    }
+  
+    .input-label {
+      font-size: 0.8rem; /* Reduces font size for labels */
+    }
+  
+    .login-button {
+      font-size: 0.9rem; /* Reduces login button font size */
+    }
+  
+    .help-text {
+      font-size: 0.8rem; /* Reduces help text font size */
+    }
+  
+    .extras {
+      font-size: 0.6rem; /* Reduces extras font size */
+    }
+  }
+  
+  /* For screens smaller than 480px */
+  @media screen and (max-width: 480px) {
+    .login-container {
+      width: 100%; /* Makes login container full width */
+      height: auto; /* Adjusts height to auto */
+      padding: 10px; /* Adds some padding */
+    }
+  
+    .login-card {
+      width: 100%;
+      padding: 1rem; /* Reduces padding further */
+    }
+  
+    .icon {
+      font-size: 2rem; /* Reduces icon size */
+    }
+  
+    .title {
+      font-size: 1.3rem; /* Reduces title font size */
+    }
+  
+    .subtitle {
+      font-size: 0.9rem; /* Reduces subtitle font size */
+    }
+  
+    .desc {
+      font-size: 0.75rem; /* Reduces description font size */
+    }
+  
+    .input-group {
+      font-size: 0.85rem; /* Reduces font size for input groups */
+    }
+  
+    .input-label {
+      font-size: 0.7rem; /* Reduces font size for labels */
+    }
+  
+    .login-button {
+      font-size: 0.9rem; /* Reduces login button font size */
+    }
+  
+    .help-text {
+      font-size: 0.75rem; /* Reduces help text font size */
+    }
+  
+    .extras {
+      font-size: 0.6rem; /* Reduces extras font size */
+    }
+  }
