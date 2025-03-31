@@ -164,99 +164,98 @@ html, body {
 
 @media screen and (max-width: 768px) {
     .login-container {
-      width: 90%; /* Adjusts the width */
-      height: auto; /* Adjusts height to auto */
+      width: 90%; 
+      height: auto;
     }
   
     .login-card {
       width: 100%;
-      max-width: none; /* Removes the max-width for better responsiveness */
-      padding: 1.5rem; /* Adjusts padding */
+      max-width: none; 
+      padding: 1.5rem; 
     }
   
     .icon {
-      font-size: 2.5rem; /* Reduces icon size */
+      font-size: 2.5rem; 
     }
   
     .title {
-      font-size: 1.5rem; /* Reduces title font size */
+      font-size: 1.5rem;
     }
   
     .subtitle {
-      font-size: 1rem; /* Reduces subtitle font size */
+      font-size: 1rem;
     }
   
     .desc {
-      font-size: 0.8rem; /* Reduces description font size */
+      font-size: 0.8rem;
     }
   
     .input-group {
-      font-size: 0.9rem; /* Reduces font size for input groups */
+      font-size: 0.9rem; 
     }
   
     .input-label {
-      font-size: 0.8rem; /* Reduces font size for labels */
+      font-size: 0.8rem; 
     }
   
     .login-button {
-      font-size: 0.9rem; /* Reduces login button font size */
+      font-size: 0.9rem; 
     }
   
     .help-text {
-      font-size: 0.8rem; /* Reduces help text font size */
+      font-size: 0.8rem;
     }
   
     .extras {
-      font-size: 0.6rem; /* Reduces extras font size */
+      font-size: 0.6rem; 
     }
   }
   
-  /* For screens smaller than 480px */
+ 
   @media screen and (max-width: 480px) {
     .login-container {
-      width: 100%; /* Makes login container full width */
-      height: auto; /* Adjusts height to auto */
-      padding: 10px; /* Adds some padding */
+      width: 100%; 
+      height: auto; 
+      padding: 10px;
     }
   
     .login-card {
       width: 100%;
-      padding: 1rem; /* Reduces padding further */
+      padding: 1rem; 
     }
   
     .icon {
-      font-size: 2rem; /* Reduces icon size */
+      font-size: 2rem; 
     }
   
     .title {
-      font-size: 1.3rem; /* Reduces title font size */
+      font-size: 1.3rem; 
     }
   
     .subtitle {
-      font-size: 0.9rem; /* Reduces subtitle font size */
+      font-size: 0.9rem; 
     }
   
     .desc {
-      font-size: 0.75rem; /* Reduces description font size */
+      font-size: 0.75rem;
     }
   
     .input-group {
-      font-size: 0.85rem; /* Reduces font size for input groups */
+      font-size: 0.85rem; 
     }
   
     .input-label {
-      font-size: 0.7rem; /* Reduces font size for labels */
-    }
+      font-size: 0.7rem; }
   
     .login-button {
-      font-size: 0.9rem; /* Reduces login button font size */
+      font-size: 0.9rem; 
     }
   
     .help-text {
-      font-size: 0.75rem; /* Reduces help text font size */
+      font-size: 0.75rem; 
     }
   
     .extras {
-      font-size: 0.6rem; /* Reduces extras font size */
+      font-size: 0.6rem; 
     }
   }
