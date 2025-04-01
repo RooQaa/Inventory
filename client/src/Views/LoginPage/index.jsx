@@ -15,7 +15,6 @@ const LoginPage = () => {
           <MdEmail className="input-icon" />
           <input type="text" id="email" placeholder="أدخل بريدك الإلكتروني" />
         </div>
-
       
         <label className="input-label" htmlFor="password">كلمة المرور</label>
         <div className="input-group">
