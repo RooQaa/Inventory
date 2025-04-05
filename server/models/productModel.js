@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+const Inventory=require('./inventoryModel')
 const productSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -15,6 +15,18 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: [true, "product must has a unit"]
     }
+})
+
+productSchema.post('save', async function(doc,next){
+    try{
+        const initialQuantity = doc._quantity || 0;
+        await Inventory.create({product:doc._id, quantity:initialQuantity})  // Default quantity 0
+        next();
+    }
+    catch(err){
+        next(err)
+    }
+    
 })
 
 const Product = mongoose.model('Product', productSchema);

@@ -21,3 +21,7 @@ inventorySchema.pre(/^find/,function(next){
     }).select('-__v')
     next();
 })
+
+const Inventory = mongoose.model('Inventory',inventorySchema);
+
+module.exports=Inventory

@@ -6,28 +6,24 @@ const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 const compression = require('compression');
 const cors = require('cors');
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
-
 const authRouter = require('./routes/authRouter');
 const userRouter = require('./routes/userRouter');
+const productRouter = require('./routes/productRouter')
+const inventoryRouter = require('./routes/inventoryRouter')
 
 
 const app = express();
 
 // 🔹 Security Middleware
 app.use(cors());
-// Access-Control-Allow-Origin *
-// api.natours.com, front-end natours.com
-// app.use(cors({
-//   origin: 'https://www.natours.com'
-// }))
 
 app.options('*', cors());
-// app.options('/api/v1/tours/:id', cors());
+
 
 // Serving static files
 app.use('/api/public', express.static(path.join(__dirname, 'public')));
@@ -35,9 +31,9 @@ app.use('/api/public', express.static(path.join(__dirname, 'public')));
 // Set security HTTP headers
 app.use(helmet());
 
-
 // 🔹 Logging (Only in Development Mode)
 if (process.env.NODE_ENV === 'development') {
+ 
    app.use(morgan('dev'));
 }
 
@@ -73,7 +69,8 @@ app.use((req, res, next) => {
 // 🔹 API Routes
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/users', userRouter);
-
+app.use('/api/v1/products', productRouter);
+app.use('/api/v1/inventory', inventoryRouter);
 
 
 // 🔹 Handle Unknown Routes
